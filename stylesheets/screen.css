@@ -1,0 +1,174 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  /* line 11, ../sass/screen.scss */
+  #container {
+    width: 80%;
+    padding-top: 5%;
+    height: auto;
+  }
+}
+@media (min-width: 600px) and (max-width: 900px) {
+  /* line 18, ../sass/screen.scss */
+  #container {
+    width: 450px;
+    padding-right: 7%;
+    padding-top: 5%;
+    height: auto;
+  }
+}
+@media (min-width: 900px) {
+  /* line 27, ../sass/screen.scss */
+  #container {
+    width: 480px;
+    padding-right: 7%;
+    padding-top: 5%;
+    height: auto;
+  }
+}
+/* line 36, ../sass/screen.scss */
+body {
+  cursor: crosshair;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  background-image: url("../img/nyc.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  /* -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; */
+  font-family: Helvetica, Gotham, Myriad Pro;
+}
+/* line 51, ../sass/screen.scss */
+body #container {
+  float: left;
+  position: relative;
+  left: 50%;
+  height: auto;
+}
+/* line 57, ../sass/screen.scss */
+body #introduction {
+  position: relative;
+  left: -50%;
+  padding: 5%;
+  color: black;
+  background-color: #FFFFFF;
+  border-style: solid;
+  border-width: medium;
+  float: left;
+  text-align: left;
+}
+/* line 67, ../sass/screen.scss */
+body #introduction h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 25px;
+}
+/* line 72, ../sass/screen.scss */
+body #introduction p {
+  font-size: 20px;
+  line-height: 200%;
+}
+/* line 76, ../sass/screen.scss */
+body #introduction a, body #introduction a:visited {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  background-color: #FFFFFF;
+  border-style: solid;
+  border-width: medium;
+  color: black;
+  padding: 2px;
+}
+/* line 86, ../sass/screen.scss */
+body #introduction #intel:hover {
+  color: #007ab5;
+}
+/* line 89, ../sass/screen.scss */
+body #introduction #linkedin:hover {
+  background-color: #007ab5;
+  color: #fff;
+}
+/* line 93, ../sass/screen.scss */
+body #introduction #github:hover {
+  background-color: #000;
+  color: #fff;
+}
+/* line 97, ../sass/screen.scss */
+body #introduction #gmail:hover {
+  background-color: #fff;
+  color: #dd4e42;
+}
+/* line 101, ../sass/screen.scss */
+body #introduction #hidden {
+  display: none;
+}
