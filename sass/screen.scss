@@ -1,0 +1,106 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+
+@import "compass";
+@import "compass/reset";
+
+@media screen and (max-width: 600px){
+#container{
+width: 80%;
+padding-top: 5%;
+height: auto;	
+}
+}
+@media (min-width: 600px)and (max-width: 900px){
+#container{
+width: 450px;
+//padding: 5%;
+padding-right: 7%;
+padding-top: 5%;	
+height: auto;	
+}
+}
+@media (min-width: 900px){
+#container{
+width: 480px;
+padding-right: 7%;
+padding-top: 5%;
+height: auto;	
+}
+}
+
+	
+body{
+cursor: crosshair;
+height: 100%;	
+width: 100%;
+overflow-x:hidden;	
+background-image: url("../img/nyc.jpg");
+background-repeat: no-repeat;
+background-position: center center;
+background-attachment: fixed;
+//background-size: cover;
+/* -webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover; */
+
+font-family: Helvetica, Gotham, Myriad Pro;		
+#container{
+float: left;
+position: relative;
+left:50%;
+height: auto;	
+}
+#introduction{
+position: relative;
+left:-50%;
+padding: 5%;	
+color: black;
+background-color: #FFFFFF;
+border-style: solid;
+border-width: medium;	
+float: left;
+text-align: left;
+	h1{
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 25px;
+	}
+	p{
+	font-size: 20px;
+	line-height: 200%;
+	}
+	a, a:visited{
+	text-decoration: none;	
+	font-size: 20px;
+	color: black;
+	background-color: #FFFFFF;
+	border-style: solid;
+    border-width: medium;
+    color: black;
+    padding: 2px;
+	}
+	#intel:hover{
+	color: #007ab5;
+	}
+	#linkedin:hover{
+	background-color: #007ab5;
+	color: #fff;
+	}
+	#github:hover{
+	background-color: #000;
+	color: #fff;
+	}
+	#gmail:hover{
+	background-color: #fff;
+	color: #dd4e42;
+	}
+	#hidden{
+		display: none;
+	}
+}//contact
+}//body
+
