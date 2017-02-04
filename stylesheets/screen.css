@@ -70,30 +70,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @media screen and (max-width: 600px) {
   /* line 11, ../sass/screen.scss */
   #container {
-    width: 80%;
-    padding-top: 5%;
-    height: auto;
+    width: 310px;
   }
 }
-@media (min-width: 600px) and (max-width: 900px) {
-  /* line 18, ../sass/screen.scss */
+@media screen and (min-width: 600px) {
+  /* line 16, ../sass/screen.scss */
   #container {
-    width: 450px;
-    padding-right: 7%;
-    padding-top: 5%;
-    height: auto;
+    width: 500px;
   }
 }
-@media (min-width: 900px) {
-  /* line 27, ../sass/screen.scss */
-  #container {
-    width: 480px;
-    padding-right: 7%;
-    padding-top: 5%;
-    height: auto;
-  }
-}
-/* line 36, ../sass/screen.scss */
+/* line 22, ../sass/screen.scss */
 body {
   cursor: crosshair;
   height: 100%;
@@ -103,19 +89,21 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
-  /* -webkit-background-size: cover;
+  background-size: cover;
+  -webkit-background-size: cover;
   -moz-background-size: cover;
-  -o-background-size: cover; */
+  -o-background-size: cover;
   font-family: Helvetica, Gotham, Myriad Pro;
 }
-/* line 51, ../sass/screen.scss */
+/* line 36, ../sass/screen.scss */
 body #container {
   float: left;
   position: relative;
   left: 50%;
   height: auto;
+  padding-top: 5%;
 }
-/* line 57, ../sass/screen.scss */
+/* line 43, ../sass/screen.scss */
 body #introduction {
   position: relative;
   left: -50%;
@@ -127,18 +115,18 @@ body #introduction {
   float: left;
   text-align: left;
 }
-/* line 67, ../sass/screen.scss */
+/* line 53, ../sass/screen.scss */
 body #introduction h1 {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 25px;
 }
-/* line 72, ../sass/screen.scss */
+/* line 58, ../sass/screen.scss */
 body #introduction p {
   font-size: 20px;
   line-height: 200%;
 }
-/* line 76, ../sass/screen.scss */
+/* line 62, ../sass/screen.scss */
 body #introduction a, body #introduction a:visited {
   text-decoration: none;
   font-size: 20px;
@@ -149,26 +137,17 @@ body #introduction a, body #introduction a:visited {
   color: black;
   padding: 2px;
 }
-/* line 86, ../sass/screen.scss */
-body #introduction #intel:hover {
+/* line 72, ../sass/screen.scss */
+body #introduction #mlbam:hover {
   color: #007ab5;
 }
-/* line 89, ../sass/screen.scss */
+/* line 75, ../sass/screen.scss */
 body #introduction #linkedin:hover {
   background-color: #007ab5;
   color: #fff;
 }
-/* line 93, ../sass/screen.scss */
+/* line 79, ../sass/screen.scss */
 body #introduction #github:hover {
   background-color: #000;
   color: #fff;
-}
-/* line 97, ../sass/screen.scss */
-body #introduction #gmail:hover {
-  background-color: #fff;
-  color: #dd4e42;
-}
-/* line 101, ../sass/screen.scss */
-body #introduction #hidden {
-  display: none;
 }

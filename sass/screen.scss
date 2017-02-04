@@ -9,26 +9,12 @@
 
 @media screen and (max-width: 600px){
 #container{
-width: 80%;
-padding-top: 5%;
-height: auto;
+width: 310px;
 }
 }
-@media (min-width: 600px)and (max-width: 900px){
+@media screen and (min-width: 600px){
 #container{
-width: 450px;
-//padding: 5%;
-padding-right: 7%;
-padding-top: 5%;
-height: auto;
-}
-}
-@media (min-width: 900px){
-#container{
-width: 480px;
-padding-right: 7%;
-padding-top: 5%;
-height: auto;
+width: 500px;
 }
 }
 
@@ -42,17 +28,17 @@ background-image: url("../images/nyc.jpg");
 background-repeat: no-repeat;
 background-position: center center;
 background-attachment: fixed;
-//background-size: cover;
-/* -webkit-background-size: cover;
+background-size: cover;
+-webkit-background-size: cover;
 -moz-background-size: cover;
--o-background-size: cover; */
-
+-o-background-size: cover;
 font-family: Helvetica, Gotham, Myriad Pro;
 #container{
 float: left;
 position: relative;
 left:50%;
 height: auto;
+padding-top: 5%;
 }
 #introduction{
 position: relative;
@@ -83,7 +69,7 @@ text-align: left;
     color: black;
     padding: 2px;
 	}
-	#intel:hover{
+	#mlbam:hover{
 	color: #007ab5;
 	}
 	#linkedin:hover{
@@ -93,13 +79,6 @@ text-align: left;
 	#github:hover{
 	background-color: #000;
 	color: #fff;
-	}
-	#gmail:hover{
-	background-color: #fff;
-	color: #dd4e42;
-	}
-	#hidden{
-		display: none;
 	}
 }//contact
 }//body
