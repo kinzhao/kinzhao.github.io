@@ -69,13 +69,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 @media screen and (max-width: 600px) {
   /* line 11, ../sass/screen.scss */
-  #container {
+  #intro-container {
     width: 310px;
   }
 }
 @media screen and (min-width: 600px) {
   /* line 16, ../sass/screen.scss */
-  #container {
+  #intro-container {
     width: 500px;
   }
 }
@@ -96,7 +96,7 @@ body {
   font-family: Helvetica, Gotham, Myriad Pro;
 }
 /* line 36, ../sass/screen.scss */
-body #container {
+body #intro-container {
   float: left;
   position: relative;
   left: 50%;

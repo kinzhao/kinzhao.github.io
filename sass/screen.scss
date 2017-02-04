@@ -8,12 +8,12 @@
 @import "compass/reset";
 
 @media screen and (max-width: 600px){
-#container{
+#intro-container{
 width: 310px;
 }
 }
 @media screen and (min-width: 600px){
-#container{
+#intro-container{
 width: 500px;
 }
 }
@@ -33,7 +33,7 @@ background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
 font-family: Helvetica, Gotham, Myriad Pro;
-#container{
+#intro-container{
 float: left;
 position: relative;
 left:50%;
