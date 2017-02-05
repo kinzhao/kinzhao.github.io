@@ -42,10 +42,13 @@ results.addEventListener('click', function(e) {
                 audioObject = new Audio(data.tracks.items[0].preview_url);
                 audioObject.play();
                 target.classList.add(playingCssClass);
+                $(".playing .fa").addClass("fa-circle-o-notch fa-spin fa-2x fa-fw");
                 audioObject.addEventListener('ended', function() {
+                    $(".playing .fa").removeClass("fa-circle-o-notch fa-spin fa-2x fa-fw");
                     target.classList.remove(playingCssClass);
                 });
                 audioObject.addEventListener('pause', function() {
+                    $(".playing .fa").removeClass("fa-circle-o-notch fa-spin fa-2x fa-fw");
                     target.classList.remove(playingCssClass);
                });
             });

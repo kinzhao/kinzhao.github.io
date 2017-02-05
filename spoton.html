@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="shortcut icon" href="images/k.png" type="image/png"/><title>Spot On | Kin Zhao</title>
     <link href="styles/bootstrap.min.css" rel="stylesheet">
+    <link href="fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href="styles/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
 </head>
 <body class="spot-on">
@@ -28,7 +29,7 @@
 	</div>
 	<script id="results-template" type="text/x-handlebars-template">
 	    {{#each albums.items}}
-	    <div style="background-image:url({{images.0.url}})" data-album-id="{{id}}" class="cover"></div>
+	    <div style="background-image:url({{images.0.url}})" data-album-id="{{id}}" class="cover"><span id="cover-playing"><i class="fa"></i></span></div>
 	    {{/each}}
 	</script>
 	<script src="scripts/jquery-3.1.1.min.js"></script>

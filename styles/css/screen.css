@@ -196,16 +196,22 @@ body.spot-on .result-container #results {
 body.spot-on .result-container .cover {
   width: 120px;
   height: 120px;
+  line-height: 130px;
   display: inline-block;
   background-size: cover;
   position: relative;
   border: 1px solid;
+  margin-bottom: 5px;
 }
-/* line 121, ../sass/screen.scss */
+/* line 123, ../sass/screen.scss */
 body.spot-on .result-container .cover:hover {
   cursor: pointer;
 }
-/* line 124, ../sass/screen.scss */
+/* line 126, ../sass/screen.scss */
 body.spot-on .result-container .cover.playing {
   border: 2px solid #648f00;
+}
+/* line 129, ../sass/screen.scss */
+body.spot-on .result-container #cover-playing {
+  color: #84bd00;
 }

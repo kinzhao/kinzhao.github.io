@@ -113,16 +113,21 @@ margin-right: auto;
 	.cover {
 	width: 120px;
 	height: 120px;
+	line-height: 130px;
 	display: inline-block;
 	background-size: cover;
 	position: relative;
 	border: 1px solid;
+	margin-bottom: 5px;
 	}
 	.cover:hover {
 	cursor: pointer;
 	}
 	.cover.playing {
 	border: 2px solid #648f00;
+	}
+	#cover-playing{
+	color: #84bd00;
 	}
 }
 }
