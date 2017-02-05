@@ -154,45 +154,39 @@ body.home #introduction #github:hover {
     width: 245px;
   }
 }
-@media screen and (min-width: 400px) {
-  /* line 85, ../sass/screen.scss */
-  .result-container {
-    width: 370px;
-  }
-}
-/* line 89, ../sass/screen.scss */
+/* line 85, ../sass/screen.scss */
 body.spot-on {
   background-color: #121314;
   font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
   text-align: center;
 }
-/* line 93, ../sass/screen.scss */
+/* line 89, ../sass/screen.scss */
 body.spot-on .spot-header {
   font-size: 32px;
   color: #dfe0e6;
   margin-top: 50px;
 }
-/* line 98, ../sass/screen.scss */
+/* line 94, ../sass/screen.scss */
 body.spot-on .spot-text {
   font-size: 14px;
   font-family: "proxima_nova",'Helvetica Neue',Helvetica,Arial,sans-serif;
   color: #88898c;
   margin-top: 25px;
 }
-/* line 104, ../sass/screen.scss */
+/* line 100, ../sass/screen.scss */
 body.spot-on #form-search-box {
   margin-top: 15px;
 }
-/* line 107, ../sass/screen.scss */
+/* line 103, ../sass/screen.scss */
 body.spot-on .result-container {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 110, ../sass/screen.scss */
+/* line 106, ../sass/screen.scss */
 body.spot-on .result-container #results {
   margin-top: 15px;
 }
-/* line 113, ../sass/screen.scss */
+/* line 109, ../sass/screen.scss */
 body.spot-on .result-container .cover {
   width: 120px;
   height: 120px;
@@ -203,15 +197,15 @@ body.spot-on .result-container .cover {
   border: 1px solid;
   margin-bottom: 5px;
 }
-/* line 123, ../sass/screen.scss */
+/* line 119, ../sass/screen.scss */
 body.spot-on .result-container .cover:hover {
   cursor: pointer;
 }
-/* line 126, ../sass/screen.scss */
+/* line 122, ../sass/screen.scss */
 body.spot-on .result-container .cover.playing {
   border: 2px solid #648f00;
 }
-/* line 129, ../sass/screen.scss */
+/* line 125, ../sass/screen.scss */
 body.spot-on .result-container #cover-playing {
   color: #84bd00;
 }
