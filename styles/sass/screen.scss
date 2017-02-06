@@ -17,7 +17,7 @@ cursor: crosshair;
 height: 100%;
 width: 100%;
 overflow-x:hidden;
-background-image: url("../../images/nyc.jpg");
+background-image: url("../../images/nyc.png");
 background-repeat: no-repeat;
 background-position: center center;
 background-attachment: fixed;
@@ -41,6 +41,12 @@ background-color: #FFFFFF;
 border-style: solid;
 border-width: medium;
 text-align: left;
+-webkit-touch-callout: none; /* iOS Safari */
+-webkit-user-select: none; /* Safari */
+-khtml-user-select: none; /* Konqueror HTML */
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* Internet Explorer/Edge */
+user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
 	h1{
 	text-transform: uppercase;
 	font-weight: bold;
@@ -73,56 +79,3 @@ text-align: left;
 	}
 }//contact
 }//body
-
-@media screen and (max-width: 400px){
-.result-container{
-width: 245px;
-}
-}
-
-body.spot-on {
-background-color: #121314;
-font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
-text-align: center;
-.spot-header{
-font-size: 32px;
-color: #dfe0e6;
-margin-top: 50px;
-}
-.spot-text{
-font-size: 14px;
-font-family: "proxima_nova",'Helvetica Neue',Helvetica,Arial,sans-serif;
-color: #88898c;
-margin-top: 25px;
-}
-#form-search-box{
-margin-top: 15px;
-}
-.result-container{
-margin-left: auto;
-margin-right: auto;
-	#results{
-	margin-top: 15px;
-	}
-	.cover {
-	width: 120px;
-	height: 120px;
-	line-height: 130px;
-	display: inline-block;
-	background-size: cover;
-	position: relative;
-	border: 1px solid;
-	margin-bottom: 5px;
-	}
-	.cover:hover {
-	cursor: pointer;
-	}
-	.cover.playing {
-	border: 2px solid #648f00;
-	}
-	#cover-playing{
-	color: #84bd00;
-	}
-}
-}
-

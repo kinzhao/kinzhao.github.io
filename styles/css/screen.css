@@ -81,7 +81,7 @@ body.home {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
-  background-image: url("../../images/nyc.jpg");
+  background-image: url("../../images/nyc.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -108,19 +108,31 @@ body.home #introduction {
   border-style: solid;
   border-width: medium;
   text-align: left;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently supported by Chrome and Opera */
 }
-/* line 44, ../sass/screen.scss */
+/* line 50, ../sass/screen.scss */
 body.home #introduction h1 {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 25px;
 }
-/* line 49, ../sass/screen.scss */
+/* line 55, ../sass/screen.scss */
 body.home #introduction p {
   font-size: 20px;
   line-height: 200%;
 }
-/* line 53, ../sass/screen.scss */
+/* line 59, ../sass/screen.scss */
 body.home #introduction a, body.home #introduction a:visited {
   text-decoration: none;
   font-size: 20px;
@@ -131,79 +143,17 @@ body.home #introduction a, body.home #introduction a:visited {
   color: black;
   padding: 2px;
 }
-/* line 63, ../sass/screen.scss */
+/* line 69, ../sass/screen.scss */
 body.home #introduction #mlbam:hover {
   color: #007ab5;
 }
-/* line 66, ../sass/screen.scss */
+/* line 72, ../sass/screen.scss */
 body.home #introduction #linkedin:hover {
   background-color: #007ab5;
   color: #fff;
 }
-/* line 70, ../sass/screen.scss */
+/* line 76, ../sass/screen.scss */
 body.home #introduction #github:hover {
   background-color: #000;
   color: #fff;
-}
-
-@media screen and (max-width: 400px) {
-  /* line 78, ../sass/screen.scss */
-  .result-container {
-    width: 245px;
-  }
-}
-/* line 83, ../sass/screen.scss */
-body.spot-on {
-  background-color: #121314;
-  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
-  text-align: center;
-}
-/* line 87, ../sass/screen.scss */
-body.spot-on .spot-header {
-  font-size: 32px;
-  color: #dfe0e6;
-  margin-top: 50px;
-}
-/* line 92, ../sass/screen.scss */
-body.spot-on .spot-text {
-  font-size: 14px;
-  font-family: "proxima_nova",'Helvetica Neue',Helvetica,Arial,sans-serif;
-  color: #88898c;
-  margin-top: 25px;
-}
-/* line 98, ../sass/screen.scss */
-body.spot-on #form-search-box {
-  margin-top: 15px;
-}
-/* line 101, ../sass/screen.scss */
-body.spot-on .result-container {
-  margin-left: auto;
-  margin-right: auto;
-}
-/* line 104, ../sass/screen.scss */
-body.spot-on .result-container #results {
-  margin-top: 15px;
-}
-/* line 107, ../sass/screen.scss */
-body.spot-on .result-container .cover {
-  width: 120px;
-  height: 120px;
-  line-height: 130px;
-  display: inline-block;
-  background-size: cover;
-  position: relative;
-  border: 1px solid;
-  margin-bottom: 5px;
-}
-/* line 117, ../sass/screen.scss */
-body.spot-on .result-container .cover:hover {
-  cursor: pointer;
-}
-/* line 120, ../sass/screen.scss */
-body.spot-on .result-container .cover.playing {
-  border: 2px solid #648f00;
-}
-/* line 123, ../sass/screen.scss */
-body.spot-on .result-container #cover-playing {
-  color: #84bd00;
 }
