@@ -1,4 +1,4 @@
-/* line 5, ../../../../../.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -95,11 +95,13 @@ body.home {
 body.home #intro-container {
   position: absolute;
   left: 50%;
-  top: 25%;
+  top: 45%;
   height: auto;
   transform: translate(-50%, -50%);
+  -webkit-filter: opacity(90%);
+  filter: opacity(90%);
 }
-/* line 36, ../sass/screen.scss */
+/* line 38, ../sass/screen.scss */
 body.home #introduction {
   position: relative;
   padding: 5%;
@@ -121,18 +123,18 @@ body.home #introduction {
   user-select: none;
   /* Non-prefixed version, currently supported by Chrome and Opera */
 }
-/* line 50, ../sass/screen.scss */
+/* line 52, ../sass/screen.scss */
 body.home #introduction h1 {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 25px;
 }
-/* line 55, ../sass/screen.scss */
+/* line 57, ../sass/screen.scss */
 body.home #introduction p {
   font-size: 20px;
   line-height: 200%;
 }
-/* line 59, ../sass/screen.scss */
+/* line 61, ../sass/screen.scss */
 body.home #introduction a, body.home #introduction a:visited {
   text-decoration: none;
   font-size: 20px;
@@ -143,16 +145,16 @@ body.home #introduction a, body.home #introduction a:visited {
   color: black;
   padding: 2px;
 }
-/* line 69, ../sass/screen.scss */
+/* line 71, ../sass/screen.scss */
 body.home #introduction #mlbam:hover {
   color: #007ab5;
 }
-/* line 72, ../sass/screen.scss */
+/* line 74, ../sass/screen.scss */
 body.home #introduction #linkedin:hover {
   background-color: #007ab5;
   color: #fff;
 }
-/* line 76, ../sass/screen.scss */
+/* line 78, ../sass/screen.scss */
 body.home #introduction #github:hover {
   background-color: #000;
   color: #fff;
