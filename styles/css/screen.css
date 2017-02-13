@@ -78,10 +78,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 15, ../sass/screen.scss */
 body.home {
   cursor: crosshair;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   overflow-x: hidden;
-  background-image: url("../../images/nyc.png");
+  background-image: url("../../images/hero-image.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -90,23 +90,25 @@ body.home {
   -moz-background-size: cover;
   -o-background-size: cover;
   font-family: Helvetica, Gotham, Myriad Pro;
+  display: table;
+  color: white;
+  height: 350px;
 }
-/* line 29, ../sass/screen.scss */
+/* line 32, ../sass/screen.scss */
 body.home #intro-container {
   position: absolute;
   left: 50%;
   top: 45%;
   height: auto;
   transform: translate(-50%, -50%);
-  -webkit-filter: opacity(90%);
-  filter: opacity(90%);
+  background-color: black;
+  opacity: 0.8;
+  padding: 2%;
 }
-/* line 38, ../sass/screen.scss */
+/* line 42, ../sass/screen.scss */
 body.home #introduction {
   position: relative;
   padding: 5%;
-  color: #000;
-  background-color: #FFFFFF;
   border-style: solid;
   border-width: medium;
   text-align: left;
@@ -123,27 +125,26 @@ body.home #introduction {
   user-select: none;
   /* Non-prefixed version, currently supported by Chrome and Opera */
 }
-/* line 52, ../sass/screen.scss */
+/* line 54, ../sass/screen.scss */
 body.home #introduction h1 {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 25px;
 }
-/* line 57, ../sass/screen.scss */
+/* line 59, ../sass/screen.scss */
 body.home #introduction p {
   font-size: 20px;
   line-height: 200%;
 }
-/* line 61, ../sass/screen.scss */
+/* line 63, ../sass/screen.scss */
 body.home #introduction a, body.home #introduction a:visited {
   text-decoration: none;
   font-size: 20px;
-  color: black;
-  background-color: #FFFFFF;
-  border-style: solid;
-  border-width: medium;
-  color: black;
-  padding: 2px;
+  color: #fff;
+}
+/* line 68, ../sass/screen.scss */
+body.home #introduction .social-media a {
+  margin-right: 15px;
 }
 /* line 71, ../sass/screen.scss */
 body.home #introduction #mlbam:hover {
