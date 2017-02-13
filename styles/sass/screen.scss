@@ -4,11 +4,13 @@
 @media screen and (max-width: 600px){
 #intro-container{
 width: 310px;
+padding: 5%;
 }
 }
 @media screen and (min-width: 600px){
 #intro-container{
 width: 500px;
+padding: 30px;
 }
 }
 
@@ -37,13 +39,9 @@ height: auto;
 transform: translate(-50%, -50%);
 background-color: black;
 opacity: 0.8;
-padding: 2%;
 }
 #introduction{
 position: relative;
-padding: 5%;
-border-style: solid;
-border-width: medium;
 text-align: left;
 -webkit-touch-callout: none; /* iOS Safari */
 -webkit-user-select: none; /* Safari */

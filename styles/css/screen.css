@@ -67,15 +67,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   /* line 5, ../sass/screen.scss */
   #intro-container {
     width: 310px;
+    padding: 5%;
   }
 }
 @media screen and (min-width: 600px) {
-  /* line 10, ../sass/screen.scss */
+  /* line 11, ../sass/screen.scss */
   #intro-container {
     width: 500px;
+    padding: 30px;
   }
 }
-/* line 15, ../sass/screen.scss */
+/* line 17, ../sass/screen.scss */
 body.home {
   cursor: crosshair;
   height: 100vh;
@@ -94,7 +96,7 @@ body.home {
   color: white;
   height: 350px;
 }
-/* line 32, ../sass/screen.scss */
+/* line 34, ../sass/screen.scss */
 body.home #intro-container {
   position: absolute;
   left: 50%;
@@ -103,14 +105,10 @@ body.home #intro-container {
   transform: translate(-50%, -50%);
   background-color: black;
   opacity: 0.8;
-  padding: 2%;
 }
-/* line 42, ../sass/screen.scss */
+/* line 43, ../sass/screen.scss */
 body.home #introduction {
   position: relative;
-  padding: 5%;
-  border-style: solid;
-  border-width: medium;
   text-align: left;
   -webkit-touch-callout: none;
   /* iOS Safari */
@@ -124,39 +122,36 @@ body.home #introduction {
   /* Internet Explorer/Edge */
   user-select: none;
   /* Non-prefixed version, currently supported by Chrome and Opera */
+  /* #mlbam:hover{
+  color: #007ab5;
+  }
+  #linkedin:hover{
+  background-color: #007ab5;
+  color: #fff;
+  }
+  #github:hover{
+  background-color: #000;
+  color: #fff;
+  } */
 }
-/* line 54, ../sass/screen.scss */
+/* line 52, ../sass/screen.scss */
 body.home #introduction h1 {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 25px;
 }
-/* line 59, ../sass/screen.scss */
+/* line 57, ../sass/screen.scss */
 body.home #introduction p {
   font-size: 20px;
   line-height: 200%;
 }
-/* line 63, ../sass/screen.scss */
+/* line 61, ../sass/screen.scss */
 body.home #introduction a, body.home #introduction a:visited {
   text-decoration: none;
   font-size: 20px;
   color: #fff;
 }
-/* line 68, ../sass/screen.scss */
+/* line 66, ../sass/screen.scss */
 body.home #introduction .social-media a {
   margin-right: 15px;
-}
-/* line 71, ../sass/screen.scss */
-body.home #introduction #mlbam:hover {
-  color: #007ab5;
-}
-/* line 74, ../sass/screen.scss */
-body.home #introduction #linkedin:hover {
-  background-color: #007ab5;
-  color: #fff;
-}
-/* line 78, ../sass/screen.scss */
-body.home #introduction #github:hover {
-  background-color: #000;
-  color: #fff;
 }
