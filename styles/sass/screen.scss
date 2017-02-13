@@ -15,18 +15,13 @@ padding: 30px;
 }
 
 body.home{
-cursor: crosshair;
-height: 100%;
-width: 100%;
-overflow-x:hidden;
-background-image: url("../../images/hero-image.jpg");
-background-repeat: no-repeat;
-background-position: center center;
-background-attachment: fixed;
+background: url("../../images/hero-image.jpg") no-repeat center center fixed;
 background-size: cover;
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
+cursor: crosshair;
+overflow-x:hidden;
 font-family: Helvetica, Gotham, Myriad Pro;
 color: #fff;
 #intro-container{
