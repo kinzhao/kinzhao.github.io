@@ -15,16 +15,14 @@ padding: 30px;
 }
 html{
 width: 100%;
-min-height: 100%;
+height: 100%;
 }
 body.home{
-width: 100%;
-min-height: 100%;
-background: url("../../images/hero-image.jpg") no-repeat top center fixed;
-background-size: cover;
+background: url("../../images/hero-image.jpg") no-repeat center center fixed;
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
+background-size: cover;
 cursor: crosshair;
 overflow-x:hidden;
 font-family: Helvetica, Gotham, Myriad Pro;

@@ -80,24 +80,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 16, ../sass/screen.scss */
 html {
   width: 100%;
-  min-height: 100%;
+  height: 100%;
 }
 
 /* line 20, ../sass/screen.scss */
 body.home {
-  width: 100%;
-  min-height: 100%;
-  background: url("../../images/hero-image.jpg") no-repeat top center fixed;
-  background-size: cover;
+  background: url("../../images/hero-image.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  background-size: cover;
   cursor: crosshair;
   overflow-x: hidden;
   font-family: Helvetica, Gotham, Myriad Pro;
   color: #fff;
 }
-/* line 32, ../sass/screen.scss */
+/* line 30, ../sass/screen.scss */
 body.home #intro-container {
   position: absolute;
   left: 50%;
@@ -107,7 +105,7 @@ body.home #intro-container {
   background-color: #000;
   opacity: 0.8;
 }
-/* line 41, ../sass/screen.scss */
+/* line 39, ../sass/screen.scss */
 body.home #introduction {
   position: relative;
   text-align: left;
@@ -135,24 +133,24 @@ body.home #introduction {
   color: #fff;
   } */
 }
-/* line 50, ../sass/screen.scss */
+/* line 48, ../sass/screen.scss */
 body.home #introduction h1 {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 25px;
 }
-/* line 55, ../sass/screen.scss */
+/* line 53, ../sass/screen.scss */
 body.home #introduction p {
   font-size: 20px;
   line-height: 200%;
 }
-/* line 59, ../sass/screen.scss */
+/* line 57, ../sass/screen.scss */
 body.home #introduction a, body.home #introduction a:visited {
   text-decoration: none;
   font-size: 20px;
   color: #fff;
 }
-/* line 64, ../sass/screen.scss */
+/* line 62, ../sass/screen.scss */
 body.home #introduction .social-media a {
   margin-right: 15px;
 }
