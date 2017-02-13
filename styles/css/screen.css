@@ -92,11 +92,9 @@ body.home {
   -moz-background-size: cover;
   -o-background-size: cover;
   font-family: Helvetica, Gotham, Myriad Pro;
-  display: table;
-  color: white;
-  height: 350px;
+  color: #fff;
 }
-/* line 34, ../sass/screen.scss */
+/* line 32, ../sass/screen.scss */
 body.home #intro-container {
   position: absolute;
   left: 50%;
@@ -106,7 +104,7 @@ body.home #intro-container {
   background-color: black;
   opacity: 0.8;
 }
-/* line 43, ../sass/screen.scss */
+/* line 41, ../sass/screen.scss */
 body.home #introduction {
   position: relative;
   text-align: left;
@@ -134,24 +132,24 @@ body.home #introduction {
   color: #fff;
   } */
 }
-/* line 52, ../sass/screen.scss */
+/* line 50, ../sass/screen.scss */
 body.home #introduction h1 {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 25px;
 }
-/* line 57, ../sass/screen.scss */
+/* line 55, ../sass/screen.scss */
 body.home #introduction p {
   font-size: 20px;
   line-height: 200%;
 }
-/* line 61, ../sass/screen.scss */
+/* line 59, ../sass/screen.scss */
 body.home #introduction a, body.home #introduction a:visited {
   text-decoration: none;
   font-size: 20px;
   color: #fff;
 }
-/* line 66, ../sass/screen.scss */
+/* line 64, ../sass/screen.scss */
 body.home #introduction .social-media a {
   margin-right: 15px;
 }
