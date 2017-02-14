@@ -63,27 +63,75 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
+@-moz-keyframes bounce {
+  0% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  50% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes bounce {
+  0% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  50% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
 @media screen and (max-width: 600px) {
-  /* line 5, ../sass/screen.scss */
+  /* line 19, ../sass/screen.scss */
   #intro-container {
     width: 310px;
     padding: 5%;
   }
 }
 @media screen and (min-width: 600px) {
-  /* line 11, ../sass/screen.scss */
+  /* line 25, ../sass/screen.scss */
   #intro-container {
     width: 500px;
     padding: 30px;
   }
 }
-/* line 16, ../sass/screen.scss */
+/* line 30, ../sass/screen.scss */
 html {
   width: 100%;
   height: 100%;
 }
 
-/* line 20, ../sass/screen.scss */
+/* line 34, ../sass/screen.scss */
 body.home {
   background: url("../../images/hero-image.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -95,7 +143,7 @@ body.home {
   font-family: Helvetica, Gotham, Myriad Pro;
   color: #fff;
 }
-/* line 30, ../sass/screen.scss */
+/* line 44, ../sass/screen.scss */
 body.home #intro-container {
   position: absolute;
   left: 50%;
@@ -105,7 +153,7 @@ body.home #intro-container {
   background-color: #000;
   opacity: 0.8;
 }
-/* line 39, ../sass/screen.scss */
+/* line 53, ../sass/screen.scss */
 body.home #introduction {
   position: relative;
   text-align: left;
@@ -133,32 +181,30 @@ body.home #introduction {
   color: #fff;
   } */
 }
-/* line 48, ../sass/screen.scss */
+/* line 62, ../sass/screen.scss */
 body.home #introduction h1 {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 25px;
 }
-/* line 53, ../sass/screen.scss */
+/* line 67, ../sass/screen.scss */
 body.home #introduction p {
   font-size: 20px;
   line-height: 200%;
 }
-/* line 57, ../sass/screen.scss */
+/* line 71, ../sass/screen.scss */
 body.home #introduction a, body.home #introduction a:visited {
   text-decoration: none;
   font-size: 20px;
   color: #fff;
 }
-/* line 62, ../sass/screen.scss */
-body.home #introduction .social-media a {
-  margin-right: 15px;
+/* line 78, ../sass/screen.scss */
+body.home #introduction .social-media i {
+  padding: 10px;
 }
-/* line 65, ../sass/screen.scss */
+/* line 81, ../sass/screen.scss */
 body.home #introduction .social-media i:hover {
-  -ms-transform: rotate(10deg);
-  /* IE 9 */
-  -webkit-transform: rotate(10deg);
-  /* Chrome, Safari, Opera */
-  transform: rotate(10deg);
+  -moz-animation: bounce 1s infinite;
+  -webkit-animation: bounce 1s infinite;
+  animation: bounce 1s infinite;
 }
