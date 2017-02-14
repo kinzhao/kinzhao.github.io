@@ -147,7 +147,7 @@ body.home {
 body.home #intro-container {
   position: absolute;
   left: 50%;
-  top: 46%;
+  top: 50%;
   height: auto;
   transform: translate(-50%, -50%);
   background-color: #000;
