@@ -1,20 +1,6 @@
 @import "compass";
 @import "compass/reset";
 
-
-@include keyframes(bounce) {
-0% {
-@include transform(translateY(0));
-}
-50% {
-@include transform(translateY(-30px));
-} 
-100% {
-@include transform(translateY(0));
-} 
-}
-
-
 @media screen and (max-width: 600px){
 #intro-container{
 width: 310px;
@@ -27,10 +13,11 @@ width: 500px;
 padding: 30px;
 }
 }
+
 html{
 width: 100%;
 height: 100%;
-}
+
 body.home{
 background: url("../../images/hero-image.jpg") no-repeat center center fixed;
 -webkit-background-size: cover;
@@ -41,15 +28,16 @@ cursor: crosshair;
 overflow-x:hidden;
 font-family: Helvetica, Gotham, Myriad Pro;
 color: #fff;
+
 #intro-container{
 position: absolute;
 left: 50%;
 top: 50%;
 height: auto;
 transform: translate(-50%, -50%);
-background-color: #000;
-opacity: 0.8;
+background: rgba(0,0,0,0.8);
 }
+
 #introduction{
 position: relative;
 text-align: left;
@@ -59,38 +47,54 @@ text-align: left;
 -moz-user-select: none; /* Firefox */
 -ms-user-select: none; /* Internet Explorer/Edge */
 user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+
 	h1{
 	text-transform: uppercase;
 	font-weight: bold;
 	font-size: 25px;
 	}
+
 	p{
 	font-size: 20px;
 	line-height: 200%;
 	}
+
 	a, a:visited{
 	text-decoration: none;
 	font-size: 20px;
     color: #fff;
 	}
-	.social-media a{
-	}
+
 	.social-media i{
-	padding: 10px
+	padding: 10px;
 	}
-	.social-media i:hover{
-	@include animation(bounce 1s infinite);
-	}
-	/* #mlbam:hover{
+
+	#mlbam:hover{
 	color: #007ab5;
 	}
-	#linkedin:hover{
-	background-color: #007ab5;
-	color: #fff;
+
+	.social-media i:hover{
+	color: #007ab5;
 	}
+	/* #linkedin i:hover{
+	// background-color: #007ab5;
+	color: #0077B5;
+	}
+
 	#github:hover{
-	background-color: #000;
-	color: #fff;
+	// background-color: #fff;
+	color: #767676;
+	}
+
+	#stackoverflow:hover{
+	// background-color: #fff;
+	color: #F48024;
+	}
+
+	#email:hover{
+	// background-color: #fff;
+	color: #db3236;
 	} */
 }//contact
 }//body
+}
