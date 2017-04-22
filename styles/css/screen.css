@@ -92,7 +92,7 @@ html body.home {
   cursor: crosshair;
   overflow-x: hidden;
   font-family: Helvetica, Gotham, Myriad Pro;
-  color: #fff;
+  color: #f2f2f2;
 }
 /* line 32, ../sass/screen.scss */
 html body.home #intro-container {
