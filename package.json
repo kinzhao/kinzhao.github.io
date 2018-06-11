@@ -1,0 +1,45 @@
+{
+  "name": "kinzhao.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production",
+    "dev": "webpack-dev-server --open --mode development",
+    "live-server": "http-server dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kinzhao/kinzhao.github.io.git"
+  },
+  "author": "Kin Zhao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kinzhao/kinzhao.github.io/issues"
+  },
+  "homepage": "https://github.com/kinzhao/kinzhao.github.io#readme",
+  "devDependencies": {
+    "autoprefixer": "^8.6.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^0.28.11",
+    "cssnano": "^3.10.0",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.9.0",
+    "postcss-loader": "^2.1.5",
+    "sass-loader": "^7.0.3",
+    "style-loader": "^0.21.0",
+    "uglifyjs-webpack-plugin": "^1.2.5",
+    "webpack": "^4.11.0",
+    "webpack-cli": "^3.0.2",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "npm": "^6.1.0"
+  }
+}
