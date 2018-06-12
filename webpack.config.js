@@ -12,7 +12,7 @@ module.exports = {
         library: 'Home',
         libraryExport: 'default',
         path: path.resolve(__dirname, 'dist'),
-        filename: 'index.[hash].js'
+        filename: 'js/index.[hash].js'
     },
     module: {
         rules: [
@@ -34,15 +34,21 @@ module.exports = {
             },
             {
                 test: /\.(png|svg|jpg|gif)$/,
-                use: [
-                    'file-loader'
-                ]
+                use: [{
+                    loader: 'file-loader',
+                    options: {
+                        name: 'images/[name].[ext]'
+                    }
+                }]
             },
             {
                 test: /\.(woff(2)?|ttf|eot)$/,
-                use: [
-                    'file-loader'
-                ]
+                use: [{
+                    loader: 'file-loader',
+                    options: {
+                        name: 'fonts/[name].[ext]'
+                    }
+                }]
             }
         ]
     },
@@ -52,7 +58,7 @@ module.exports = {
         new HTMLWebpackPlugin({
             hash: true,
             template: path.resolve(__dirname, 'index.html'),
-            favicon: 'src/images/k.png'
+            favicon: 'src/images/favicon.ico'
         }),
         new webpack.HotModuleReplacementPlugin(),
     ]
