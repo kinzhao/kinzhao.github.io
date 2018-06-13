@@ -6,13 +6,13 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
     entry: {
-        main: './src/index.js'
+        index: './src/index.js'
     },
     output: {
         library: 'Home',
         libraryExport: 'default',
         path: path.resolve(__dirname, 'dist'),
-        filename: 'js/index.[hash].js'
+        filename: 'js/[name].[hash].js'
     },
     module: {
         rules: [
@@ -52,10 +52,16 @@ module.exports = {
             }
         ]
     },
+    optimization: {
+        splitChunks: {
+            chunks: 'all'
+        }
+    },
     plugins: [
         new CleanWebpackPlugin('dist', {}),
         new uglifyJsPlugin(),
         new HTMLWebpackPlugin({
+            title: 'Caching',
             hash: true,
             template: path.resolve(__dirname, 'index.html'),
             favicon: 'src/images/favicon.ico'
