@@ -12,7 +12,7 @@ module.exports = {
         library: 'Home',
         libraryExport: 'default',
         path: path.resolve(__dirname, 'dist'),
-        filename: 'js/[name].[hash].js'
+        filename: 'src/js/[name].[hash].js'
     },
     module: {
         rules: [
@@ -37,7 +37,7 @@ module.exports = {
                 use: [{
                     loader: 'file-loader',
                     options: {
-                        name: 'images/[name].[ext]'
+                        name: 'src/images/[name].[ext]'
                     }
                 }]
             },
@@ -46,7 +46,7 @@ module.exports = {
                 use: [{
                     loader: 'file-loader',
                     options: {
-                        name: 'fonts/[name].[ext]'
+                        name: 'src/fonts/[name].[ext]'
                     }
                 }]
             }
