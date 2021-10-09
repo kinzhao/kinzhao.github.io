@@ -24,7 +24,7 @@ body {
         // media queries
         @media screen and (max-width: $screen-sm-max) {
             .introduction {
-                width: 310px;
+                width: 290px;
                 padding: 5%;
             }
         }
@@ -63,7 +63,7 @@ body {
                 line-height: 200%;
                 margin: 0 0 20px 0;
 
-                .mlbam:hover {
+                .jpmc:hover {
                     color: $hover-blue;
                 }
             }
