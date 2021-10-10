@@ -123,17 +123,17 @@ html body.home #introduction {
   	// background-color: #007ab5;
   	color: #0077B5;
   	}
-  
+
   	#github:hover{
   	// background-color: #fff;
   	color: #767676;
   	}
-  
+
   	#stackoverflow:hover{
   	// background-color: #fff;
   	color: #F48024;
   	}
-  
+
   	#email:hover{
   	// background-color: #fff;
   	color: #db3236;
@@ -161,7 +161,7 @@ html body.home #introduction .social-media i {
   padding: 10px;
 }
 /* line 72, ../sass/screen.scss */
-html body.home #introduction #mlbam:hover {
+html body.home #introduction #jpmc:hover {
   color: #007ab5;
 }
 /* line 76, ../sass/screen.scss */
