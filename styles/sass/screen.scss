@@ -1,6 +1,9 @@
 @import "compass";
 @import "compass/reset";
 
+$body-color: #cfcfcf;
+$tagline-color: #e6e6e6;
+
 @media screen and (max-width: 600px){
 #intro-container{
 width: 290px;
@@ -9,7 +12,7 @@ padding: 5%;
 }
 @media screen and (min-width: 600px){
 #intro-container{
-width: 500px;
+width: min(880px, calc(100% - 40px));
 padding: 30px;
 }
 }
@@ -34,12 +37,17 @@ position: absolute;
 left: 50%;
 top: 50%;
 height: auto;
+max-height: calc(100% - 40px);
+overflow-y: auto;
 transform: translate(-50%, -50%);
 background: rgba(0,0,0,0.8);
 }
 
 #introduction{
 position: relative;
+	/* one scale, set once: the roles line shares the body size and both
+	   grow with the viewport instead of jumping at a breakpoint */
+	--body-font-size: clamp(1rem, 0.9rem + 0.5vw, 1.125rem);
 text-align: left;
 -webkit-touch-callout: none; /* iOS Safari */
 -webkit-user-select: none; /* Safari */
@@ -51,12 +59,34 @@ user-select: none; /* Non-prefixed version, currently supported by Chrome and Op
 	h1{
 	text-transform: uppercase;
 	font-weight: bold;
-	font-size: 25px;
+	font-size: calc(var(--body-font-size) * 1.4);
 	}
 
 	p{
-	font-size: 20px;
-	line-height: 200%;
+	font-size: var(--body-font-size);
+	line-height: 170%;
+	color: $body-color;
+	text-wrap: pretty; // no one-word last lines
+	}
+
+	.tagline{
+	text-transform: uppercase;
+	color: $tagline-color;
+	}
+
+	.tagline .role{
+	white-space: nowrap;
+	}
+
+	// too narrow for one line: stack the roles instead of breaking mid-phrase
+	@media screen and (max-width: 840px){
+	.tagline .role{
+	display: block;
+	}
+
+	.tagline .sep{
+	display: none;
+	}
 	}
 
 	a, a:visited{
@@ -67,10 +97,6 @@ user-select: none; /* Non-prefixed version, currently supported by Chrome and Op
 
 	.social-media i{
 	padding: 10px;
-	}
-
-	#jpmc:hover{
-	color: #007ab5;
 	}
 
 	.social-media i:hover{

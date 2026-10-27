@@ -73,7 +73,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @media screen and (min-width: 600px) {
   /* line 11, ../sass/screen.scss */
   #intro-container {
-    width: 500px;
+    width: min(880px, calc(100% - 40px));
     padding: 30px;
   }
 }
@@ -100,12 +100,15 @@ html body.home #intro-container {
   left: 50%;
   top: 50%;
   height: auto;
+  max-height: calc(100% - 40px);
+  overflow-y: auto;
   transform: translate(-50%, -50%);
   background: rgba(0, 0, 0, 0.8);
 }
 /* line 41, ../sass/screen.scss */
 html body.home #introduction {
   position: relative;
+  --body-font-size: clamp(1rem, 0.9rem + 0.5vw, 1.125rem);
   text-align: left;
   -webkit-touch-callout: none;
   /* iOS Safari */
@@ -143,12 +146,23 @@ html body.home #introduction {
 html body.home #introduction h1 {
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 25px;
+  font-size: calc(var(--body-font-size) * 1.4);
 }
 /* line 57, ../sass/screen.scss */
 html body.home #introduction p {
-  font-size: 20px;
-  line-height: 200%;
+  font-size: var(--body-font-size);
+  line-height: 170%;
+  color: #cfcfcf;
+  text-wrap: pretty;
+}
+/* line 62, ../sass/screen.scss */
+html body.home #introduction .tagline {
+  text-transform: uppercase;
+  color: #e6e6e6;
+}
+/* line 70, ../sass/screen.scss */
+html body.home #introduction .tagline .role {
+  white-space: nowrap;
 }
 /* line 62, ../sass/screen.scss */
 html body.home #introduction a, html body.home #introduction a:visited {
@@ -160,11 +174,18 @@ html body.home #introduction a, html body.home #introduction a:visited {
 html body.home #introduction .social-media i {
   padding: 10px;
 }
-/* line 72, ../sass/screen.scss */
-html body.home #introduction #jpmc:hover {
-  color: #007ab5;
-}
 /* line 76, ../sass/screen.scss */
 html body.home #introduction .social-media i:hover {
   color: #007ab5;
+}
+
+@media screen and (max-width: 840px) {
+  /* line 75, ../sass/screen.scss */
+  html body.home #introduction .tagline .role {
+    display: block;
+  }
+  /* line 79, ../sass/screen.scss */
+  html body.home #introduction .tagline .sep {
+    display: none;
+  }
 }
