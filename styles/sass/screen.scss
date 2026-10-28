@@ -39,8 +39,14 @@ top: 50%;
 height: auto;
 max-height: calc(100% - 40px);
 overflow-y: auto;
+scrollbar-width: none; /* Firefox */
+-ms-overflow-style: none; /* old Edge */
 transform: translate(-50%, -50%);
 background: rgba(0,0,0,0.8);
+
+	&::-webkit-scrollbar{ /* Chrome, Safari */
+	display: none;
+	}
 }
 
 #introduction{
@@ -74,19 +80,9 @@ user-select: none; /* Non-prefixed version, currently supported by Chrome and Op
 	color: $tagline-color;
 	}
 
+	// halves of the title: a wrap can only land after the comma
 	.tagline .role{
 	white-space: nowrap;
-	}
-
-	// too narrow for one line: stack the roles instead of breaking mid-phrase
-	@media screen and (max-width: 840px){
-	.tagline .role{
-	display: block;
-	}
-
-	.tagline .sep{
-	display: none;
-	}
 	}
 
 	a, a:visited{

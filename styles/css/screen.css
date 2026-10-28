@@ -102,8 +102,16 @@ html body.home #intro-container {
   height: auto;
   max-height: calc(100% - 40px);
   overflow-y: auto;
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* old Edge */
   transform: translate(-50%, -50%);
   background: rgba(0, 0, 0, 0.8);
+}
+/* line 48, ../sass/screen.scss */
+html body.home #intro-container::-webkit-scrollbar {
+  display: none;
 }
 /* line 41, ../sass/screen.scss */
 html body.home #introduction {
@@ -177,15 +185,4 @@ html body.home #introduction .social-media i {
 /* line 76, ../sass/screen.scss */
 html body.home #introduction .social-media i:hover {
   color: #007ab5;
-}
-
-@media screen and (max-width: 840px) {
-  /* line 75, ../sass/screen.scss */
-  html body.home #introduction .tagline .role {
-    display: block;
-  }
-  /* line 79, ../sass/screen.scss */
-  html body.home #introduction .tagline .sep {
-    display: none;
-  }
 }
